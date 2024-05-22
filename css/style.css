@@ -272,6 +272,8 @@ a {
 }
 
 @media (max-width: 768px) {
+    .page-container {
+        overflow: scroll;
     #blob, #blob2 {
         display: none;
     }
