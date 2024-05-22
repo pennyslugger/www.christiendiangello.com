@@ -253,15 +253,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh); /* Full viewport height */
+    height: calc(100dvh); /* Full viewport height */
 }
 
 .flex-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Ensure it takes full height of the parent container */
-    transform: translateY(-5.35vh);
+    height: 100dvh; /* Ensure it takes full height of the parent container */
+    transform: translateY(-40px);
     width: 100%; /* Ensure it takes full width of the parent container */
 }
 
