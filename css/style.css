@@ -7,8 +7,17 @@ html, body {
     background-color: rgb(0, 0, 0);
 }
 
-nav {
+.nav-container {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;;
+    z-index: 500;
+    background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
+}
+
+nav {
     display: grid;
     grid-template-columns: 6fr 4.5fr 1fr 1fr;
     align-items: center;
@@ -17,7 +26,9 @@ nav {
     left: 10%;
     width: 80vw;
     z-index: 1000;
-    padding: 20px 0; /* Adjusted padding for better centering */
+    padding-left: 20px 0; /* Adjusted padding for better centering */
+    padding-right: 20px 0;
+    mask-image: linear-gradient(90deg, rgba(174, 174, 174, 0.4), white 10%, white 90%, rgba(174, 174, 174, 0.4) 100%);
 }
 
 nav a {
@@ -34,6 +45,7 @@ nav a {
     opacity: 0.5;
     transition: 0.3s;
     margin: 0 1em; /* Added margin for spacing between links */
+    /* mask-image: linear-gradient(90deg, rgba(174, 174, 174, 0.2), white 10%, white 95%, transparent 100%); */
 }
 
 nav a:hover {
@@ -47,6 +59,7 @@ nav a:hover {
     font-size: 80%;
     color: white; /* Ensures links inherit the color of their parent */
     z-index: 100;
+    /* border: 3px solid white; */
 }
 
 .horizontal-scroll-container {
@@ -77,7 +90,6 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:;
     transform: translateY(-40px);
 }
 
@@ -100,7 +112,7 @@ nav a:hover {
 
 #blob {
     position: absolute;
-    width: 400px;
+    width: 60%;
     aspect-ratio: 1;
     background: linear-gradient(to right, #a1c4fd, #fda1ff);
     z-index: 1;
@@ -112,7 +124,7 @@ nav a:hover {
 }
 #blob2 {
     position: absolute;
-    width: 400px;
+    width: 60%;
     aspect-ratio: 1;
     background: linear-gradient(to right, #ff9a9e, #fda1ff);
     z-index: 1;
@@ -181,8 +193,8 @@ a {
 }
 .fade-out {
     transition: 0.5s ease-out;
-    transform: translateY(-10%);
-    scale: 0.8;
+    transform: translateY(10vw);
+    scale: 1;
     opacity: 0;
 }
 
@@ -249,12 +261,17 @@ a {
     align-items: center;
     justify-content: center;
     height: 100%; /* Ensure it takes full height of the parent container */
-    transform: translateY(-4vh);
+    transform: translateY(-5.35vh);
     width: 100%; /* Ensure it takes full width of the parent container */
 }
 
 .flex-card {
     text-align: center; /* Center text inside the card */
+}
+
+.page-container.active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
 }
 
 /* Media query for mobile devices */
@@ -271,20 +288,6 @@ a {
     }
 }
 
-@media (max-width: 768px) {
-    #blob, #blob2 {
-        display: none;
-    }
-    .li, {
-        display: none;
-    }
-    #circa {
-        display: none;
-    }
-    .page-container {
-        overflow: scroll;
-    }
-}
 @keyframes cropIn {
     from {
         clip-path: inset(0 0 100% 0 );
@@ -323,21 +326,69 @@ a {
 
 }
 
-.scroller[data-animated=true] {
-    overflow: hidden;
-}
-.scroller[data-animated="true"] .scroller__inner {
-    flex-wrap: nowrap;
-}
-
 .scroller {
+    transition: 1000ms;
     max-width: 200px;
     display: flex;
     justify-content: center;
+    overflow:visible;
+    opacity: 1;
+    /* -webkit-mask-image: linear-gradient(90deg, black, white 20%, white 80%, black 100%); */
 }
 
 .scroller__inner{
     padding-block: 1rem;
+    width: 80%;
+    overflow: hidden;
+    justify-content: center;
     display: flex;
-    gap: 1rem;
+    transition: 1000ms;
+    animation: loadIn 1000ms forwards;
+    mask-image: linear-gradient(90deg, transparent, white 10%, white 90%, transparent 100%);
+}
+
+@keyframes loadIn {
+    0% {
+        scale: 1 1;
+        opacity: 0;
+        gap: 5rem;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #blob, #blob2 {
+        /* display: none; */
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 35vw 0.4fr 10vw 10vw;
+        justify-content: left;
+        padding-left: 8%;
+        gap: 3vw;
+        width: 100%;
+    }
+    nav a{
+        right: 0;
+    }
+    .nav-name{
+        left: 0;
+    }
+    .scroller, .scroller__inner {
+        /* display: none; */
+    }
+    #circa {
+        display: none;
+    }
+    .page-container {
+        overflow: scroll;
+    }
+    .grid-container {
+        margin-top: 6vh;
+    }
 }
