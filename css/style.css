@@ -132,7 +132,7 @@ nav a:hover {
     position: absolute;
     width: 60%;
     aspect-ratio: 1;
-    background: radial-gradient(#848eff98 20%, #fda1ff61 50%);
+    background: radial-gradient(#848eff62 20%, #fda1ff61 50%);
     z-index: 1;
     border-radius: 100%;
     animation: rotate 30000ms linear infinite;
@@ -183,12 +183,12 @@ nav a:hover {
         rotate: 0deg;
     }
     50% {
-        scale: 0.8 1.1;
+        scale: 1.1 0.9;
         clip-path: polygon(40% 0%, 70% 15%, 100% 50%, 80% 85%, 50% 100%, 20% 85%, 0% 50%, 30% 15%);
     }
     to {
         rotate: 360deg;
-        clip-path: polygon(50% 0%, 70% 20%, 100% 50%, 30% 80%, 50% 60%, 10% 30%, 30% 50%, 20% 60%);
+        clip-path: polygon(50% 0%, 70% 20%, 100% 50%, 80% 80%, 50% 100%, 10% 80%, 0% 50%, 20% 20%);
     }
 }
 @keyframes rotate2 {
