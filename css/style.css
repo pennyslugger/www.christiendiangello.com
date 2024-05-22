@@ -132,7 +132,7 @@ nav a:hover {
     position: absolute;
     width: 60%;
     aspect-ratio: 1;
-    background: radial-gradient(#91baf162 20%, #fda1ff61 70%);
+    background: radial-gradient(#8bc6ec62 20%, #e487e558 70%);
     z-index: 1;
     border-radius: 100%;
     animation: rotate 30000ms linear infinite;
@@ -398,7 +398,7 @@ a {
         width: 100vw;
         height: 20vh;;
         z-index: 500;
-        background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
+        background: linear-gradient( black 52%, rgba(0, 0, 0, 0.0) 100%);
     }
     nav {
         display: grid;
