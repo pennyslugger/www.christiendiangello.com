@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav a');
     const contentContainer = document.querySelector('.horizontal-scroll-container');
+    const filmSection = document.querySelector('#film');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
@@ -202,28 +203,4 @@ function unloadFilmAndAnim() {
         animSection.innerHTML = '';
         console.log('Anim content unloaded');
     }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Blob hover effect
-    document.querySelectorAll('.category').forEach(item => {
-        item.addEventListener('mouseenter', () => {
-            document.getElementById('blob').classList.remove('invisible');
-        });
-        item.addEventListener('mouseleave', () => {
-            document.getElementById('blob').classList.add('invisible');
-        });
-    });
-});
-
-const scrollers = document.querySelectorAll(".scroller");
-
-if (!window.matchMedia("(prefers-reduced-motion:reduce)").matches) {
-    addFadeOutAnimation();
-}
-
-function addAnimation() {
-    scrollers.forEach(scroller => {
-        scroller.setAttribute('data-animated',true);
-    });
 }
