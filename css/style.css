@@ -12,7 +12,7 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 10dvh;;
+    height: 8dvh;;
     z-index: 0;
     background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
 }
