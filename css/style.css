@@ -132,7 +132,7 @@ nav a:hover {
     position: absolute;
     width: 60%;
     aspect-ratio: 1;
-    background: radial-gradient(#848eff62 20%, #fda1ff61 50%);
+    background: radial-gradient(#91baf162 20%, #fda1ff61 70%);
     z-index: 1;
     border-radius: 100%;
     animation: rotate 30000ms linear infinite;
