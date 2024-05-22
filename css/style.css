@@ -12,7 +12,7 @@ html, body {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 20vh;;
+    height: 10dvh;;
     z-index: 500;
     background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
 }
@@ -364,6 +364,15 @@ a {
 @media (max-width: 768px) {
     #blob, #blob2 {
         /* display: none; */
+    }
+    .nav-container {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 20vh;;
+        z-index: 500;
+        background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
     }
     nav {
         display: grid;
