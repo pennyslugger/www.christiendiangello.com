@@ -281,6 +281,9 @@ a {
     #circa {
         display: none;
     }
+    .page-container {
+        overflow: scroll;
+    }
 }
 @keyframes cropIn {
     from {
