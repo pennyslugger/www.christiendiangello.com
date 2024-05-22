@@ -13,7 +13,7 @@ html, body {
     justify-content: center;
     width: 100vw;
     height: 8dvh;;
-    z-index: 0;
+    z-index: 500;
     background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
 }
 
