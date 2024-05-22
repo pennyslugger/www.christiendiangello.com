@@ -269,11 +269,15 @@ a {
         top: 75%;
         left: 50%;
     }
+    .page-container {
+        overflow: scroll;
+    }
 }
 
 @media (max-width: 768px) {
     .page-container {
         overflow: scroll;
+    }
     #blob, #blob2 {
         display: none;
     }
