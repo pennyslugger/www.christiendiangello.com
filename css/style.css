@@ -305,6 +305,7 @@ a {
     margin: 0;
     bottom: 5%;
     padding-inline: 0;
+    padding: 2vw;
     list-style: none;
     overflow: hidden;
     color: white;
@@ -320,24 +321,14 @@ a {
 
 }
 
-.scroller[data-animated=true] {
-    overflow: hidden;
-}
-.scroller[data-animated="true"] .scroller__inner {
-    flex-wrap: nowrap;
-}
-
 .scroller {
     max-width: 80%;
     margin: 10vw;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
 .scroller__inner{
     padding-block: 1rem;
-    display: flex;
-    overflow: hidden;
     gap: 1rem;
 }
