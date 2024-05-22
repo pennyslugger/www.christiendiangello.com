@@ -135,7 +135,7 @@ nav a:hover {
     background: linear-gradient(to right, #a1c4fd, #fda1ff);
     z-index: 1;
     border-radius: 100%;
-    animation: rotate 30000ms infinite;
+    animation: rotate 30000ms linear infinite;
     opacity: .25;
     transition: opacity 0.3s; /* Smooth transition for opacity */
     clip-path: polygon(50% 0%, 70% 20%, 100% 50%, 80% 80%, 50% 100%, 10% 80%, 0% 50%, 20% 20%);
@@ -147,7 +147,7 @@ nav a:hover {
     background: linear-gradient(to right, #ff9a9e, #fda1ff);
     z-index: 1;
     border-radius: 100%;
-    animation: rotate2 30000ms infinite;
+    animation: rotate2 30000ms linear infinite;
     opacity: .25;
     transition: opacity 0.3s; /* Smooth transition for opacity */
     clip-path: polygon(40% 0%, 70% 15%, 100% 50%, 80% 85%, 50% 100%, 20% 85%, 0% 50%, 30% 15%);
