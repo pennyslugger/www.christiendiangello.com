@@ -329,6 +329,7 @@ a {
 
 .scroller {
     max-width: 80%;
+    margin: 10vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
