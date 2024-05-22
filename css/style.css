@@ -15,6 +15,12 @@ html, body {
     height: 10dvh;;
     z-index: 500;
     background: linear-gradient( black 85%, rgba(0, 0, 0, 0.0) 100%);
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 nav {
@@ -59,6 +65,12 @@ nav a:hover {
     font-size: 80%;
     color: white; /* Ensures links inherit the color of their parent */
     z-index: 100;
+    user-drag: ;
+    -webkit-user-drag: element;
+    user-select: element;
+    -moz-user-select: element;
+    -webkit-user-select: element;
+    -ms-user-select: element;
     /* border: 3px solid white; */
 }
 
@@ -108,6 +120,12 @@ nav a:hover {
     font-size: 2vh;
     transition: 1000ms;
     opacity: 50%;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 #blob {
@@ -333,6 +351,12 @@ a {
     justify-content: center;
     overflow:visible;
     opacity: 1;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     /* -webkit-mask-image: linear-gradient(90deg, black, white 20%, white 80%, black 100%); */
 }
 
@@ -363,7 +387,7 @@ a {
 
 @media (max-width: 768px) {
     #blob, #blob2 {
-        /* display: none; */
+        display: none;
     }
     .nav-container {
         position: fixed;
