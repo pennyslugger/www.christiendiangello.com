@@ -188,6 +188,7 @@ nav a:hover {
     }
     to {
         rotate: 360deg;
+        clip-path: polygon(50% 0%, 70% 20%, 100% 50%, 30% 80%, 50% 60%, 10% 30%, 30% 50%, 20% 60%);
     }
 }
 @keyframes rotate2 {
@@ -200,6 +201,7 @@ nav a:hover {
     }
     to {
         rotate: 360deg;
+        clip-path: polygon(40% 0%, 70% 15%, 100% 50%, 80% 85%, 50% 100%, 20% 85%, 0% 50%, 30% 15%);
     }
 }
 
