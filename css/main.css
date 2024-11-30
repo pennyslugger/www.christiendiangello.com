@@ -10,6 +10,7 @@ main {
 }/* -------------> 2_about <------------- */
 main article{
     height: 70%;
+    display: flex;
     justify-content: center;
     align-self: center;
     align-content: center;
