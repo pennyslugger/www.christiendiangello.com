@@ -34,14 +34,15 @@ main article{
         .about h1{
             text-justify:newspaper;
             font-size: clamp(1vw,2.5vh,8vw);
-            font-weight: 800;
+            font-weight: 200;
             color: rgb(216, 216, 216);
 
         }
         .about p{
             text-justify:newspaper;
-            font-size: clamp(1rem,2vh,4rem);
-            font-weight: 500;
+            font-size: 1.5vh;
+            text-align: justify;
+            font-weight: 200;
             color: rgb(216, 216, 216);
 
         }
@@ -81,13 +82,12 @@ nav { /*nav container settings*/
             font-size: clamp(1vmax,1vw,2%);
             margin: 0;
             padding: 1rem;
-            writing-mode: vertical-lr;
             letter-spacing: clamp(.02rem, .1vw, .2rem);
         }
-            .spotlight h1 {color: rgb(216, 216, 216); text-shadow: 0 0 .75rem rgba(17, 17, 19, .5);}
-                .work{grid-column: 1 / 3;}
-                .blog{grid-column: 3 / 4;} 
-                .contact{}
+            .spotlight h1 {color: rgb(216, 216, 216); text-shadow: 0 0 .75rem rgba(17, 17, 19, .5); writing-mode: vertical-lr;}
+                .work{grid-column: 1 / 3; justify-content: center; align-items: center;}
+                .blog{grid-column: 3 / 4; justify-content: center; align-items: center;} 
+                .contact{justify-content: center; align-items: center;}
                 .spotlight{grid-column: 1 / 5; background-size: 150%; background-position:center center; transition-duration: 1250ms;}
         section header { /* subgrid layout */
             transition-duration: 1000ms;
@@ -107,6 +107,7 @@ nav { /*nav container settings*/
                 header:hover {background-size: 90%;background-position: 80% 10%;}
                     .spotlight:hover{background-size: 130%;}
                     .spotlight header:hover {transform: scale(95%);}
+                    .spotlight header:hover h1{ translate: 0%;}
 @media only screen and (max-width: 1100px) and (min-height:700px){
     *{ transition-duration: 0ms;}
     main{display: flex; flex-direction: column;align-items:center; height: auto;}
@@ -140,11 +141,14 @@ nav { /*nav container settings*/
         background-position: 0 -500px;
         background-repeat: no-repeat;
     }
-    .spotlight h1 {color: rgb(17, 17, 19); text-shadow: 0 0 0;}
+    .spotlight h1 {color: rgb(17, 17, 19); text-shadow: 0 0 0;writing-mode: horizontal-tb;text-align: center;}
         .spotlight:hover {background-size:150%;}
         .spotlight header:hover {transform: scale(100%);}
             h2{opacity: 0;}
     nav header:hover{background-color: rgb(240, 239, 239);}
+            .work{justify-content: center; align-items: start;}
+            .blog{justify-content: center; align-items: start;} 
+            .contact{justify-content: center; align-items: start;}
 figure{
     width: 100%;
     justify-content: center;
