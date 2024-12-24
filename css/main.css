@@ -21,7 +21,7 @@ body header {
     grid-template-columns: minmax(0,240px) 1fr;
 }
     body header h1{font-size: 24pt; white-space: nowrap;}
-    body header h2{transition-duration: 1000ms; font-size: 50pt; text-align: right;  color: rgba(0, 0, 0, 1);
+    body header h2{transition-duration: 1000ms; font-size: 50pt; text-align: right;  opacity: 1;
     }
 nav {
     padding-bottom: 2rem;
@@ -73,7 +73,7 @@ body article {
    box-shadow: 30px -30px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 700px){
-    body header h2 {font-size: 50pt; text-align: right;  color: rgba(0, 0, 0, .2);
+    body header h2 {font-size: 50pt; text-align: right;  opacity:0.2;
 }}
 @media only screen and (max-height: 609px) {
     body article {
