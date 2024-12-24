@@ -3,7 +3,7 @@
 body {
     overflow-x: hidden; 
     display: grid; 
-    grid-template-columns: minmax(0,200px) 250px 1fr minmax(0,200px);
+    grid-template-columns: minmax(0,200px) 300px 1fr minmax(0,200px);
     grid-template-rows: 5% 100px auto;
     /* height: 100vh; */
     /* width: 100vw; */
@@ -21,7 +21,7 @@ body header {
     grid-template-columns: minmax(0,240px) 1fr;
 }
     body header h1{font-size: 24pt; white-space: nowrap;}
-    body header h2{transition-duration: 1000ms; font-size: 50pt; text-align: right;  opacity: 1; -webkit-transform: translate3d(0,0,0);
+    body header h2{transition-duration: 1000ms; font-size: 50pt; text-align: right;  opacity: 1;
     }
 nav {
     padding-bottom: 2rem;
@@ -70,10 +70,10 @@ body article {
    background-color: black;
    grid-row: 1;
    float: right;
-   box-shadow: 30px -30px rgba(0, 0, 0, 0.2);
+   box-shadow: 20px -20px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 700px){
-    body header h2 {font-size: 50pt; text-align: right;  opacity:0.2; -webkit-transform: translate3d(0,0,0);
+    body header h2 {font-size: 50pt; text-align: right;  opacity:0.2;
 }}
 @media only screen and (max-height: 609px) {
     .demo-container{
