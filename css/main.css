@@ -76,9 +76,6 @@ body article {
     body header h2 {font-size: 50pt; text-align: right;  opacity:0.2; -webkit-transform: translate3d(0,0,0);
 }}
 @media only screen and (max-height: 609px) {
-    body article {
-        display: none;
-    }
     .demo-container{
         width: clamp(100px,100%,500px);   
     }
