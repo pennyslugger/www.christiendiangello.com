@@ -70,6 +70,7 @@ nav {
     display: grid;
     grid-template-columns: minmax(330px,2fr) 1fr;
     grid-template-rows: auto;
+    width: 100%;
     /* grid-gap: 1rem; */
 
   }  
@@ -154,13 +155,7 @@ button:active, button:hover, .active-filter, #demo-label, .selected{
     display: none;
 }
 
-@media only screen and (max-width: 1025px){
-#about{
-    grid-column: 2;
-    grid-row: 3;
-    justify-content: top;
-    /* justify-self: right; */
-}
+@media only screen and (max-width: 1000px){
 .demo-container{
     height: 90%;
     background-size: 25px 25px;
@@ -173,3 +168,10 @@ button:active, button:hover, .active-filter, #demo-label, .selected{
     grid-template-columns: 200px;
 }
 }
+@media only screen and (max-width: 540px){
+#about{
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: top;
+    /* justify-self: right; */
+}}
