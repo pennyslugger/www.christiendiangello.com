@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christien Di Angello | Development Editorial</title>
+    <title>Christien Di Angello | Work </title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +13,28 @@
 </head>
 <body>
     <header>
-        <h1>CHRISTIEN <br>DI ANGELLO</h1>
-        <h2>WORK</h2>
+        <h1>CHRISTIEN DI ANGELLO...</h1>
+        <nav>
+            <a href="index.html">Demo</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <main>
-        <div class="content-container"></div>
-        <article>I edit things. <br><br><br><br><br><br><br>
-        <!-- <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a diam dolor. Integer lectus nulla. -->
-        </article>
-        <nav>
-            <a href="work.html">Work</a>
-            <a href="blog.html">Blog</a>
-            <a href="index.html">←</a>
-        </nav>
+        <div class="gallery-media">
+            <a data-content="Live" href="https://vimeo.com/1039832888/f52e019b8d?share=copy" target="_blank"><figure><img src="img/Christien DI Angello Demo Reel.jpg" alt=""></figure><figcaption>2024 End of Year Reel <br><br> Editor</figcaption></a>
+            <a data-content="Live" href="https://youtu.be/P2Btp7Udk88?si=NIOA9v8YxO00B9jG" target="_blank"><figure><img src="img/Vancouver_Canucks_-_The_Call_Of_Destiny.webp" alt=""></figure><figcaption>Vancouver Canucks - The Call of Destiny <br><br> Editor</figcaption></a>
+            <a data-content="Anim" ><figure><img src="img/The_Making_Of_Redwood.webp" alt=""></figure><figcaption>Redwood Short Film <br><br>Director<br>Online Editor <br><br>[Unreleased]</figcaption></a>
+
+        </div>
     </main>
+    <aside>
+        <div>
+            <button name="filters" onclick="showLive(),selectOption(this)">Editorial</button>
+            <button name="filters" onclick="showAnim(),selectOption(this)">Other</button>
+            <button name="filters" onclick="showAll(),selectOption(this)" class="selected">All</button>
+        </div>
+    </aside>
     <script src="js/script.js"></script>
 </body>
 </html>
