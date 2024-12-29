@@ -68,7 +68,7 @@ nav {
     grid-column: 2;
     height: 300px;
     display: grid;
-    grid-template-columns: minmax(330px,2fr) 1fr;
+    grid-template-columns: minmax(320px,2fr) 1fr;
     grid-template-rows: auto;
     width: 100%;
     /* grid-gap: 1rem; */
