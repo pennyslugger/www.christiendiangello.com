@@ -78,6 +78,11 @@ nav {
    width: clamp(10px,100%,1400px);
    grid-column: 1/3;
 }
+    .demo-container::after{
+        content:"Christien Di Angello | A Demo Reel [2024]";
+        font-size: 12pt;
+        font-weight: thin;
+    }
 
 .gallery-media{
     display: grid;
@@ -147,14 +152,16 @@ aside span, aside button {
         span {cursor:default;}
         button {cursor:pointer;}
 
-button:active, button:hover, .active-filter, #demo-label, .selected{
+button:active, button:hover, .active-filter, .selected{
     background-color: black;
     color: white;
 }
 .hide *{
     display: none;
 }
-
+#demo-label{
+    align-content: end;
+}
 @media only screen and (max-width: 1000px){
 .demo-container{
     height: 90%;
