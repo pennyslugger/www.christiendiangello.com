@@ -16,7 +16,7 @@ body {
   h1{
     font-weight:600;
   }
-  a{
+  a,a:any-link,a:visited{
     color: black;
   }
 body header {
@@ -130,10 +130,9 @@ nav {
     linear-gradient(to bottom, rgba(216, 215, 215, 0.5) 1px, transparent 1px);
     box-shadow: inset 0px 0px 10px rgb(255, 255, 255);
     background-position: center center;
-    transition-duration: 800ms;
 }
 .gallery-media a:hover figcaption {
-    background-position: top left;
+	text-decoration: underline;
 }
 
 /* Work Player */
